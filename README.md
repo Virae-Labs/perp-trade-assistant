@@ -1,6 +1,6 @@
 # Perp Trade Assistant
 
-Prepare official Hyperliquid, Lighter and dYdX perpetual order forms from a Dashboard `browser-hedge-v1` instruction. The user completes wallet connection, authorization, setting changes and final order submission.
+Prepare official Hyperliquid, Lighter and dYdX perpetual order forms from a Dashboard `browser-hedge-v1` instruction. When permitted by the user, the assistant automatically aligns each verified market's leverage to the supplied target through the official UI and reads it back before filling orders. Margin mode changes, wallet connection, authorization, signing and final order submission remain with the user.
 
 This repository contains one skill, defined by `SKILL.md` at its root. A connected browser tool for the user's existing Chrome profile is required. Installing this skill does not grant browser access or technically enforce fill-only permissions.
 
