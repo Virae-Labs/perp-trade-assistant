@@ -30,3 +30,7 @@ Read only the sections needed for the supplied legs. UI labels may change: verif
 ## Handoff
 
 Before the user submits, remind them to check the actual account, market, side, units, Market order type, maximum slippage, margin/leverage and fees in the official UI. If the instruction expires while preparing the second form, stop and regenerate it; do not silently refresh references. Market execution prices can differ from Dashboard references. The user should cancel outstanding orders in these markets before associating snapshots in Dashboard.
+
+## Closing override — all venues
+
+For `browser-close-v1`, preserve leverage and margin settings. Verify the current **signed** position, not the size of an existing order or an unsigned balance. Market + visibly enabled Reduce-only is mandatory on every non-flat leg. Read back Reduce-only after side/type/size changes; some forms reset it. A close-position dialog is usable only when its clearly separate quantity/type/Reduce-only/slippage fields do not submit. Do not click a combined Close/Confirm control. If Market Reduce-only or exact form slippage cannot be represented, stop. A flat leg is skipped; never fill zero or open the opposite position to match the other leg.
