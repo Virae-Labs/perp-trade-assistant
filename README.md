@@ -7,3 +7,5 @@ This repository contains one skill, defined by `SKILL.md` at its root. A connect
 Install this repository as `perp-trade-assistant` using your AI client's supported skill installer or personal skills directory. The repository is `Virae-Labs/perp-trade-assistant`; private repository access is required. Invoke `$perp-trade-assistant` with the copied Dashboard instruction. Never add API credentials or wallet material to the repository.
 
 Dashboard tracks read-only position observations after explicit user association. Net position snapshots do not establish individual executions, fees or historical funding. Existing target exposure is rejected in the first version. Skill instructions do not replace restricted browser tools or user review.
+
+Dashboard instructions carry the requested sizing amount/mode, matched base quantity and separate target leverage for each leg. USD sizing means notional per leg, not margin; leverage does not multiply the supplied quantity. Changing the Dashboard amount or either leverage target requires regenerating and copying the latest instruction. Older copied prompts that forbid leverage changes must be regenerated.
