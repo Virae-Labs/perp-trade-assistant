@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perp Trade Assistant"
+  short_description: "Fill venue hedge forms and hand control to the user"
+  default_prompt: "Use $perp-trade-assistant to prepare the supplied hedge forms in my existing Chrome, then stop before authorization or submission."
